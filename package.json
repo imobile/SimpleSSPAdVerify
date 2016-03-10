@@ -1,0 +1,23 @@
+{
+    "name": "SSP_Simple_AdVerify",
+    "description": "SSP simple ad verrify module",
+    "version": "1.0.0",
+    "repository": "https://github.com/imobile/SimpleSSPAdVerify.git",
+    "private": true,
+    "license": "ISC",
+    "scripts": {
+        "tsc": "./node_modules/.bin/tsc",
+        "tsc:w": "./node_modules/.bin/tsc -w",
+        "serve": "./node_modules/.bin/live-server --host=localhost --port=8080 .",
+        "go": "concurrent \"npm run tsc:w\" \"npm run serve\" "
+    },    
+    "dependencies": {
+        "phantomjs-prebuilt": "^2.1.1",
+        "casperjs": "^1.1.0-beta5"
+    },
+    "devDependencies": {
+        "concurrently": "^1.0.0",
+        "live-server": "^0.9.0",
+        "typescript": "^1.7.3"
+    }
+}

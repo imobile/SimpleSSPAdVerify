@@ -1,0 +1,1 @@
+/// <reference path="./typing/casperjs.d.ts"/>
